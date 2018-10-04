@@ -61,7 +61,6 @@ class GA {
         let p2 = Array.from({length:size}, () => 0)
 
         //Initialize the position of each indices in the individuals
-        
         for (let i = 0; i < size; i++){
             p1[ind1[i]] = i
             p2[ind2[i]] = i
@@ -78,8 +77,7 @@ class GA {
             cxpoint1 = cxpoint2
             cxpoint2 = aux
 
-        } //Swap the two cx points
-            
+        }
 
         // Apply crossover between cx points
         for (let i = cxpoint1; i < cxpoint2; i++){
@@ -105,6 +103,7 @@ class GA {
         
     }
 
+    // Simple swap mutation
     mutation(){
         for (let i = 0; i < this.offspring.length; i++) {
 
@@ -129,10 +128,7 @@ class GA {
     tournementK(k){
 
         let listK = Array.from({length: k}, () => Math.floor(Math.random() * this.populationSize))
-       
-        listK.sort(function(a,b){
-            return b - a
-        })
+        listK.sort(function(a,b){ return b - a  })
 
         return this.population[listK[0]]
     }
@@ -162,17 +158,6 @@ function randomSolution(nqueens){
     tempArray = Array.from({length: nqueens}, (v, i) => i)
     tempArray.shuffle()
     return new Solution(tempArray)
-}
-
-function evaluateTest(chromosome){
-    let fitness = 0.0
-    let i = 0
-    chromosome.forEach(gene => {
-        
-        fitness += gene * i
-        i++
-    })
-    return fitness
 }
 
 function evaluate(chromosome){
@@ -218,9 +203,7 @@ function stopFunction() {
     clearInterval(runningVar)
 }
 
-/* 
-    Custumized function to add the shuffle capacity on protopyte Array
-*/
+//Customized function to add the shuffle capacity on protopyte Array    
 Array.prototype.shuffle = function() {
     var input = this
      
@@ -237,7 +220,7 @@ Array.prototype.shuffle = function() {
 
 // Global vars
 let ga
-let countGen = 0
+let countGen = 1
 let runningVar
 
 function solve(){
