@@ -2,11 +2,11 @@
 A Genetic Algorithm implemented to solve the N-Queen Problem, which is a very popular combinatorial optimization problem.
 
 # N-Queen
-The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other. For example, following is a solution for 4 Queen problem. The expected output is a binary matrix which has 1s for the blocks where queens are placed.
-[Reference](https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/).
+The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other. For example, following is a solution for 4 Queen problem. The expected output is a binary matrix which has 1s for the blocks where queens are placed 
+[1](https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/).
 
 ## GA's Characteristics
- + Solution is represented as a permutation vector with "n" integers, where n is the number of queens to be placed;
+ + Solution is represented as a permutation vector with *N* integers, where *N* is the number of queens to be placed;
  + Partially Mapped Crossover (PMX);
  + Swap mutation;
  + Parents selection based on a tournament between *k* individuals;
