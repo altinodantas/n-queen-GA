@@ -18,10 +18,11 @@ The page presents some parameters through which one may notices their impact in 
  - *Crossover rate:* **0.80**
  - *Maximal of generations:* **200**
  - *K-tournament:* **3**
- - *N-Queens:* *8*
+ - *N-Queens:* **8**
+ - *Delay:* **100**
 
 #### External libs
   - [jQuery](http://jquery.com) - Help js codification
   - [Bootstrap](https://getbootstrap.com) - Deal with front page appearance
   
-Despite implementation is able to find a solution for 200-Queens in 1028 generation, remember we are talking about a pure JavaScript toy running in your web browser. Be patient, it is regarding didactic material with no intention to be performatic.
+Despite implementation is able to find a solution for 200-Queens in 1028 generation using 400 individuals, remember we are talking about a pure JavaScript toy running in your web browser. Be patient, it is regarding didactic material with no intention to be performatic.
