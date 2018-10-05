@@ -21,7 +21,7 @@ The page presents some parameters through which one may notices their impact in 
  - *N-Queens:* **8**
  - *Delay:* **100**
   
-Despite implementation is able to find a solution for 200-Queens in 1028 generation using 400 individuals, remember we are talking about a pure JavaScript toy running in your web browser. Be patient, it is regarding didactic material with no intention to be performatic.
+Despite implementation is able to find a solution for 200-Queens in 1,028 generation using 400 individuals, remember we are talking about a pure JavaScript toy running in your web browser. Be patient, it is regarding didactic material with no intention to be performatic.
 
 #### External libs
   - [jQuery](http://jquery.com) - Help js codification
