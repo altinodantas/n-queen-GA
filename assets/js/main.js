@@ -37,8 +37,8 @@ class GA {
 
     performCrossOver(){
         while (this.offspring.length < this.populationSize) {
-            let fatherA = this.tournementK(this.ktournament)
-            let fatherB = this.tournementK(this.ktournament)
+            let fatherA = this.tournamentK(this.ktournament)
+            let fatherB = this.tournamentK(this.ktournament)
 
             if(Math.random() < this.crossoverRate){
                 let sons = this.PMX(fatherA.chromosome, fatherB.chromosome)
@@ -125,7 +125,7 @@ class GA {
         }
     }
 
-    tournementK(k){
+    tournamentK(k){
 
         let listK = Array.from({length: k}, () => Math.floor(Math.random() * this.populationSize))
         listK.sort(function(a,b){ return b - a  })
