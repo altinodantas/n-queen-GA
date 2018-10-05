@@ -24,4 +24,4 @@ The page presents some parameters through which one may notices their impact in 
   - [jQuery](http://jquery.com) - Help js codification
   - [Bootstrap](https://getbootstrap.com) - Deal with front page appearance
   
-  Remember we are talking about a pure JavaScript toy running in your web browser. It is regarding to didactic material with no intention to be performatic.
+Despite implementation is able to find a solution for 200-Queens in 1028 generation, remember we are talking about a pure JavaScript toy running in your web browser. Be patient, it is regarding didactic material with no intention to be performatic.
